@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="calcular.css">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Document</title>
+</head>
+<body>
+ 
+  <section>
+   <div class="container">
+
+      <div class="slider">
+        <input type="radio" name="slider" id="sliderOne" class="inputRadio">
+        <input type="radio" name="slider" id="sliderDos">
+        <input type="radio" name="slider" id="sliderTres">
+        <div class="buttons">
+          <label for="sliderOne"></label>
+          <label for="sliderDos"></label>
+          <label for="sliderTres"></label>
+        </div>
+
+        <div class="content">
+          <div class="firstSlide">
+            <div class="slideExercise">
+              <p class="parrafo">Calcular la intensidad del campo eléctrico en el punto "N" si la carga Q <sub>1</sub>= -8 x 10 <sup>-6</sup>C</p>
+              <img class="img1" src="./Captura5.PNG" alt="foto de ejrcicio de campo eléctrico">
+            </div>
+          </div>
+
+            
+
+          <div class="firstSlide">
+              <div class="slideExercise">
+              <p class="parrafo">Deteremine la intensidad del campo eléctrico en el punto "B", si la carga Q <sub>1</sub>= 4 x 10 <sup>-8</sup>C y Q <sub>2</sub>= -3 x 10 <sup>-8</sup>C, donde la distancia hacia las cargas es de 3m.</p>
+              <img class="img2" src="./imagen1.jpeg" alt="foto de ejrcicio de campo eléctrico">
+              </div>
+            </div>
+          <div class="firstSlide">
+            <div class="slideExercise">
+              <p class="parrafo">Calcular la intensidad del campo eléctrico en el punto "P" si:, si la carga Q <sub>1</sub>= -3 x 10 <sup>-8</sup>C y Q <sub>2</sub>= -5 x 10 <sup>-8</sup>C</p>
+              <!-- <img  class="img3" src="./" alt="foto de ejrcicio de campo eléctrico"> -->
+              </div>
+          </div>
+        </div>
+      </div>
+   </div>
+  </section>
+  
+  
+ 
+  <div class="contenedor-formularios">
+  <form class="formulario3 formulario">
+  <h1 class="titulo-formulario1">INGRESE LOS DATOS</h1>
+  <label for="coulomb" class="label-formulario"> Constante de Coulomb <span class="igual">= </span>
+      <!-- <div class="contenedor-exponente lado1"> -->
+          <input type="text" id="coulomb1" class="inputs">
+          <input type="text" id="texto" class="inputs op" placeholder="">
+          <input type="text" id="coulomb2" class="inputs">
+          <sup>
+            <input type="text" id="coulombExponente" class="inputs exponente">
+          </sup>
+          <span class="unidad ">Nm<sup>2</sup></span><span class="ope">x</span>
+
+  </label>
+  <!-- <div class="medio">
+    <input type="text" id="texto" class="inputs op" placeholder="">
+  </div> -->
+  <br><br>
+  <label for="coulomb" class="label-formulario">Carga Eléctrica Fuente<span class="igual">= </span> 
+    <input type="text" id="cargaNumero1" class="inputs">
+          <input type="text" id="" class="inputs op" placeholder="">
+          <input type="text" id="cargaNumero2" class="inputs">
+          <sup>
+            <input type="text" id="cargaExponente" class="inputs">
+          </sup>
+          <span class="unidad">C</span><span class="ope">/</span>
+  </label><br><br>  
+  <label for="coulomb" class="label-formulario">Distancia Radial <span class="igual">= </span> 
+    <input type="text" id="distancia" class="inputs item-lado3">
+    <sup>
+      <input type="text" id="distanciaElevada" class="inputs exponente">
+    </sup>
+    <span class="unidad">C <sup>2</sup></span>  </label><br><br>
+    <div class="contenedor-btn">
+      <input id="enviar" class="btn enviar"  value="CALCULAR">
+      <input type="reset" id="borrar" class="btn enviar" value="BORRAR">
+     </div>
+    </form>
+
+
+    <!-- se crea el contenedor de salida de resultados -->
+
+ <form class="formulario4"  id="formulario-suma-vectores">
+  <h1 class="titulo-formulario2">SE OBTIENE LA INTENSIDAD <br> DE CAMPO ELÉCTRICO</h1>
+  <div id="salida"></div>
+  <br>
+  <input type="text" id="coulomb1" class="inputs unidad" >
+  <sub>
+    <input type="text" id="coulomb2" class="inputs exponente exponente-salida">
+  </sub>
+  <input type="text" id="texto" class="inputs" placeholder="">
+  <input type="text" id="coulomb2" class="inputs" >
+  <sub>
+    <input type="text" id="coulomb2" class="inputs exponente" >
+  </sub>
+  <input type="text" id="texto" class="inputs" placeholder="">
+  <input type="text" id="coulomb2" class="inputs">
+  <sub>
+    <input type="text" id="coulomb2" class="inputs exponente">
+  </sub>
+  <br><br>
+
+  <!-- se realiza la suma -->
+  <!-- <form action="" id="formulario-suma-vectores" class="formulario-suma-vectores"> -->
+
+    
+    <div class="salidaDos">
+      <input type="text" id="coulomb1" class="inputs unidad"   >
+      <sup>
+        <input type="text" id="coulomb2" class="inputs exponente" >
+      </sup>
+      <input type="text" id="texto" class="inputs" placeholder="" >
+  
+      <!-- se suman los vectores -->
+      <input type="text" id="campo1" class="inputs inputResultado2">
+      <sup class="supAlejar">
+        <input type="text" id="campo1AlCuadrado" class="inputs exponente" value="">
+      </sup>
+      <input type="text" id="texto" class="inputs" placeholder="">
+      <input type="text" id="campo2" class="inputs inputResultado2" value="">
+      <sup>
+        <input type="text" id="campo2AlCuadrado" class="inputs exponente" value="">
+      </sup><br>
+  
+       <!-- se halla el total resultante del campo eléctrico -->
+      <input type="text" id="coulomb2" class="inputs unidad centrarInput">
+      <sub>
+        <input type="text" id="coulomb2" class="inputs exponente" >
+      </sub>
+      <input type="text" id="" class="inputs" placeholder="">
+      <input type="text" id="coulomb2" class="inputResultado" value=""><span class="unidad1">N/C</span>
+      
+      </div>
+        <!-- <div-- class="contenedor-btn2">
+          <input type="submit" class="btn enviar enviar2" id="btn-suma-vectores">
+        <input type="reset" class="btn enviar enviar2"> 
+        </div-->
+      </form>
+      </div> 
+</div>
+
+
+<script src="./main.js"></script>
+</body>
+</html>
+
+    
+
+
+
+

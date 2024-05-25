@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(240, 36, 206);
+}
+.contenedor-formularios{
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  
+}
+.formulario3{
+  text-align: center;
+  border: 1px solid rgb(12, 0, 9);
+  width: 42%;
+  min-height: 55vh;
+  margin-right: 16px ;
+  background-color: #2b2929;
+  color: white;
+  border-radius: 7px;
+  margin-left: 50px;
+  background-color:rgb(37, 37, 37);
+  
+}
+h1{
+  font-size: 15px;
+}
+
+.formulario4{
+  text-align: center;
+  border-radius: 7px;
+  background-color: #2b2929;
+  margin-right: 40px;
+  width: 38%;
+  min-height: 55vh;
+  background-color: #2b2929;
+  background-color:rgb(37, 37, 37);
+
+
+
+}
+
+.respuestaTotal{
+  background-color: #2b2929;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  width: 78%;
+  height: 22vh;
+  margin-left: 10px ;
+  
+
+}
